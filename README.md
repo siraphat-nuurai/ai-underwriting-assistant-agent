@@ -28,7 +28,9 @@ RAG System
 ## Setup
 1. Install dependencies:
 
+```bash
 pip install -r requirements.txt
+```
 
 2. Get Google API Key:
 
@@ -38,37 +40,40 @@ pip install -r requirements.txt
 
 3. Run the prototype:
 
+```bash
 cd agentic-ai-inmemorychat
 python main.py
+```
 
 ---
 
 ## Example Queries
 
 ### Document Search (RAG)
-"What is RAG in LangChain?"
-"Explain how to assess for Heart Murmur"
-"Assess rating by the following case: female 25 years old with DM2, HbA1c 8%, drink alcohol 30 grams/day, no smoking. What is the total rating for this case?"
+
+- "What is RAG in LangChain?"
+
+- "Explain how to assess for Heart Murmur"
+
+- "Assess rating by the following case: female 25 years old with DM2, HbA1c 8%, drink alcohol 30 grams/day, no smoking. What is the total rating for this case?"
 
 ### Alcohol Calculations
-"Calculate alcohol quantity for 2 glasses of Whiskey"
-"Drinking 1 bottle of wine"
-"How many gram if this person drink 3 can of beer"
+
+- "Calculate alcohol quantity for 2 glasses of Whiskey"
+
+- "Drinking 1 bottle of wine"
+
+- "How many gram if this person drink 3 can of beer"
 
 ---
 
 ## Architecture
 
-User Query → Guardrails → Agent → Tool Selection → Tool Execution → Response
-                ↓
-            Memory Update
-                ↓
-         Context Retention
 
 ### Agent Flow
+
 1. Question Analysis - Agent analyzes the user query
 2. Tool Selection - Chooses appropriate tool(s)
 3. Tool Execution - Executes selected tool with parameters
 4. Result Processing - Processes and formats results
 5. Response Generation - Provides final answer to user
-   
