@@ -69,6 +69,7 @@ python main.py
 
 ## Architecture
 
+![Architecture Diagram](images/ai-customs-agent-arch.png)
 
 ### Agent Flow
 
